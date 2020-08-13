@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6f4b8aaecfa533fe26e0374d8216dc5",
+    "content-hash": "4248d3178d529c30cc72a0bdd0540eb9",
     "packages": [
         {
             "name": "dibi/dibi",
@@ -99,35 +99,6 @@
             "time": "2019-04-09T16:50:27+00:00"
         },
         {
-            "name": "doomy/dataprovider",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/doomy/DataProvider.git",
-                "reference": "13384cc0ce8c4ab72ce58e37c0f776f9aa5b65d1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/doomy/DataProvider/zipball/13384cc0ce8c4ab72ce58e37c0f776f9aa5b65d1",
-                "reference": "13384cc0ce8c4ab72ce58e37c0f776f9aa5b65d1",
-                "shasum": ""
-            },
-            "require": {
-                "dibi/dibi": "*",
-                "doomy/entitycache": ">= 1.0.0",
-                "doomy/repository": ">= 1.0.9",
-                "php": ">= 5.6"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "time": "2019-10-28T16:59:56+00:00"
-        },
-        {
             "name": "doomy/entitycache",
             "version": "1.0.0",
             "source": {
@@ -155,24 +126,53 @@
             "time": "2018-02-17T09:02:43+00:00"
         },
         {
-            "name": "doomy/repository",
-            "version": "3.0.4",
+            "name": "doomy/ormtopus",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/doomy/repository.git",
-                "reference": "3f5c3f46669118003943f2c1cec4bf9f6d33e052"
+                "url": "https://github.com/doomy/ormtopus.git",
+                "reference": "b908950e384662af2da7693200b2f9c144ab4088"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doomy/repository/zipball/3f5c3f46669118003943f2c1cec4bf9f6d33e052",
-                "reference": "3f5c3f46669118003943f2c1cec4bf9f6d33e052",
+                "url": "https://api.github.com/repos/doomy/ormtopus/zipball/b908950e384662af2da7693200b2f9c144ab4088",
+                "reference": "b908950e384662af2da7693200b2f9c144ab4088",
+                "shasum": ""
+            },
+            "require": {
+                "dibi/dibi": "*",
+                "doomy/entitycache": ">= 1.0.0",
+                "doomy/repository": ">= 3.0.4",
+                "php": ">= 5.6"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "time": "2020-06-20T12:07:03+00:00"
+        },
+        {
+            "name": "doomy/repository",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doomy/repository.git",
+                "reference": "4f239c7109ca035163ebd542cb15eaec50afeabf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doomy/repository/zipball/4f239c7109ca035163ebd542cb15eaec50afeabf",
+                "reference": "4f239c7109ca035163ebd542cb15eaec50afeabf",
                 "shasum": ""
             },
             "require": {
                 "dibi/dibi": ">=3.0",
                 "doomy/customdibi": "^1.0.2",
                 "doomy/stringtools": "^1.0.1",
-                "php": ">= 7"
+                "php": ">= 7.4"
             },
             "type": "library",
             "autoload": {
@@ -185,7 +185,7 @@
                 "MIT"
             ],
             "description": "simple data model framework for dataprovider service",
-            "time": "2019-11-19T18:13:44+00:00"
+            "time": "2020-06-27T14:48:10+00:00"
         },
         {
             "name": "doomy/stringtools",
@@ -220,16 +220,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.1.2",
+            "version": "v3.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "488f58378bba71767e7831c83f9e0fa808bf83b9"
+                "reference": "c09937fbb24987b2a41c6022ebe84f4f1b8eec0f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/488f58378bba71767e7831c83f9e0fa808bf83b9",
-                "reference": "488f58378bba71767e7831c83f9e0fa808bf83b9",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c09937fbb24987b2a41c6022ebe84f4f1b8eec0f",
+                "reference": "c09937fbb24987b2a41c6022ebe84f4f1b8eec0f",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "utility",
                 "validation"
             ],
-            "time": "2020-05-27T09:58:51+00:00"
+            "time": "2020-08-07T10:34:21+00:00"
         }
     ],
     "packages-dev": [],
