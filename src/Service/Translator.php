@@ -3,17 +3,17 @@
 namespace Doomy\Translator\Service;
 
 use Nette\Localization\ITranslator;
-use Doomy\DataProvider\DataProvider;
+use Doomy\Ormtopus\DataEntityManager;
 use Doomy\Translator\Model\SystemTranslation;
 
 class Translator implements ITranslator
 {
     private $language;
-    private $dataProvider;
+    private $data;
 
-    public function __construct($language, DataProvider $dataProvider) {
+    public function __construct($language, DataEntityManager $data) {
         $this->language = $language;
-        $this->dataProvider = $dataProvider;
+        $this->data = $data;
     }
 
     public function setLanguage($language) {
@@ -28,7 +28,7 @@ class Translator implements ITranslator
     {
         // $message = str_replace("'", "''", $message);
         if (!$message) return '';
-        $translation = $this->dataProvider->findOne(
+        $translation = $this->data->findOne(
             SystemTranslation::class,
             ['KEY' => str_replace("'", "''", $message), 'LANGUAGE_CODE' => $this->language]
         );
@@ -42,7 +42,7 @@ class Translator implements ITranslator
     }
 
     private function prefillTranslation($message) {
-        $this->dataProvider->save(
+        $this->data->save(
             SystemTranslation::class,
             [
                 'LANGUAGE_CODE' => $this->language,
