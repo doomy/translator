@@ -4,9 +4,9 @@
       "classmap": ["src/"]
     },
     "require": {
-		"php": ">= 7.1",
+		"php": ">= 8.3",
 		"dibi/dibi": "*",
-        "doomy/ormtopus": "^1.0",
+        "doomy/ormtopus": "^5.3",
         "nette/utils": "*"
 	},
 	"minimum-stability": "stable"
